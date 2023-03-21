@@ -446,6 +446,7 @@ begin
     when others then
        dbms_output.put_line('--MAL: Caso Todo correcto pero SI especifico la fecha final devuelve '||sqlerrm);
   end;
+  --Bloque añadido a test para pruebas e tabla RESERVAS
   begin    
     alquilar('12345678A', '1234-ABC', date '2013-3-10', date '2013-3-12');    
   end;
